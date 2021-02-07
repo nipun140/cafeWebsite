@@ -1,0 +1,440 @@
+    * {
+        box-sizing: border-box;
+        font-family: 'Texturina', serif;
+    }
+    
+    body {
+        margin: 0px;
+        background-color: rgb(247, 247, 216);
+        position: relative;
+        padding-bottom: 120px;
+        min-height: 100vh;
+    }
+    /* navbar */
+    
+    .navbar {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 25px;
+        background-color: black;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+    
+    .navbar li {
+        width: 25%;
+        text-align: center;
+    }
+    
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 10px 0px;
+        position: relative;
+        animation: getdown 1s forwards;
+    }
+    
+    @keyframes getdown {
+        from {
+            bottom: 100%;
+        }
+        to {
+            bottom: 0%;
+        }
+    }
+    
+    .navbar li a:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .allcontent {
+        width: 80%;
+        margin: auto;
+    }
+    /* about us */
+    
+    .background_image {
+        background-image: url(images/coffeehouse.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 400px;
+        position: relative;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    
+    #content {
+        display: none;
+        margin: 0px;
+        font-size: 100px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        color: white;
+        font-family: 'Dancing Script', cursive;
+        animation: zoom 1s forwards;
+    }
+    
+    @keyframes zoom {
+        0% {
+            transform: translate(-50%, -50%) scale(0);
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+    
+    .background_image p {
+        margin: 0px;
+        display: none;
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.705);
+        padding: 5px;
+        width: 200px;
+        text-align: center;
+    }
+    
+    #para1 {
+        left: 20px;
+        animation: movedown 1s forwards;
+    }
+    
+    @keyframes movedown {
+        0% {
+            top: -20px;
+        }
+        100% {
+            top: 20px;
+        }
+    }
+    
+    #para2 {
+        right: 20px;
+        animation: moveup 1s forwards;
+    }
+    
+    @keyframes moveup {
+        0% {
+            bottom: -40px;
+        }
+        100% {
+            bottom: 20px;
+        }
+    }
+    /* about us  */
+    
+    .outer {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .aboutcafe {
+        width: 45%;
+    }
+    
+    .aboutcafe h4 {
+        width: 45%;
+        margin: 0 auto;
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 8px 0px;
+        letter-spacing: 2px;
+        outline-color: black;
+        outline-style: solid;
+        animation: anim 2s infinite ease-in;
+    }
+    
+    .image {
+        max-width: 90%;
+    }
+    
+    .aboutcafe #aboutcontent {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+    }
+    
+    .aboutcafe #quote {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-style: italic;
+        text-align: justify;
+        background-color: rgb(240, 239, 239);
+        border-left: 5px solid rgb(160, 158, 158);
+        padding: 10px;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+    }
+    
+    .cafe_pic {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .images {
+        max-width: 100%;
+        height: auto;
+    }
+    /* menu */
+    
+    .menu_outer {
+        width: 80%;
+        margin: auto;
+        margin-top: 60px;
+    }
+    
+    .menu_outer h4 {
+        width: 45%;
+        margin: auto;
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 8px 0px;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+        outline-color: black;
+        outline-style: solid;
+        animation: anim 2s infinite ease-in;
+    }
+    
+    .titles {
+        width: 100%;
+        display: flex;
+        font-size: 20px;
+        box-shadow: 0px -1px 16px 0px #80808042;
+        padding: 8px 10px;
+        background-color: white;
+    }
+    
+    .title {
+        width: 50%;
+        color: black;
+        text-align: center;
+        padding: 8px;
+        cursor: pointer;
+    }
+    
+    .active {
+        background-color: black;
+        color: white;
+    }
+    
+    .menulist {
+        width: 100%;
+        padding: 40px 10px 20px;
+        box-shadow: 0px -1px 16px 0px #80808042;
+        margin-bottom: 60px;
+        background-color: white;
+    }
+    
+    .item {
+        margin-bottom: 40px;
+        font-size: 22px;
+    }
+    
+    .item .item_title {
+        font-weight: bold;
+        margin: 0px;
+    }
+    /* find us */
+    
+    .outercontainer {
+        width: 100%;
+        display: flex;
+    }
+    
+    .find_us {
+        width: 50%;
+    }
+    
+    .find_us h4 {
+        width: 45%;
+        margin: auto;
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 8px 0px;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+        outline-color: black;
+        outline-style: solid;
+        animation: anim 2s infinite ease-in;
+    }
+    
+    .find_us p,
+    .form p {
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+        margin-top: 0px;
+    }
+    
+    #fyi {
+        color: white;
+        background-color: black;
+        padding: 5px;
+        text-align: center;
+    }
+    /* form  */
+    
+    .form {
+        width: 50%;
+        margin-left: 20px;
+    }
+    
+    input {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+        padding: 15px;
+        margin-bottom: 40px;
+    }
+    
+    #last_input {
+        margin-bottom: 15px;
+    }
+    
+    .form button {
+        background-color: black;
+        padding: 10px;
+        color: white;
+        border: none;
+        font-size: 15px;
+        letter-spacing: 2px;
+        outline-color: black;
+        outline-style: solid;
+        animation: anim 2s infinite ease-in;
+    }
+    
+    @keyframes anim {
+        0% {
+            outline-offset: 0px;
+            outline-width: 3px;
+        }
+        25% {
+            outline-offset: 2px;
+            outline-width: 3px;
+        }
+        50% {
+            outline-offset: 4px;
+            outline-width: 1px;
+        }
+        75% {
+            outline-offset: 8px;
+            outline-width: 0.5px;
+        }
+        100% {
+            outline-offset: 10px;
+            outline: none;
+        }
+    }
+    
+    .form button:hover {
+        color: black;
+        background-color: white;
+    }
+    
+    .form button:focus {
+        color: white;
+        background-color: blac;
+    }
+    
+    footer {
+        /* margin-top: 20px; */
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 10px 0px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    
+    #up {
+        color: white;
+        font-size: 40px;
+        margin-left: 8px;
+        text-decoration: none;
+    }
+    
+    @media(max-width:875px) {
+        .allcontent {
+            width: 95%;
+        }
+        .image {
+            max-width: 100%;
+        }
+    }
+    
+    @media(max-width:768px) {
+        .outer {
+            flex-direction: column;
+        }
+        .aboutcafe {
+            width: 100%;
+        }
+        .cafe_pic {
+            width: 100%;
+        }
+        .outercontainer {
+            flex-direction: column;
+        }
+        .find_us {
+            width: 100%;
+        }
+        .form {
+            width: 100%;
+        }
+        .images {
+            max-width: 100%;
+            margin-top: 30px;
+        }
+        .form {
+            margin-top: 30px;
+            margin-left: 0px;
+        }
+    }
+    
+    @media(max-width:700px) {
+        #para1 {
+            left: 50%;
+            transform: translate(-50%);
+            top: 20px;
+        }
+        #para2 {
+            right: 50%;
+            transform: translate(50%);
+            bottom: 20px;
+        }
+        input {
+            font-size: 17px;
+        }
+    }

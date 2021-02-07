@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE</title>
+    <link href="style_cafe.css" type="text/css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Texturina:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <ul class="navbar">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#where">WHERE</a></li>
+    </ul>
+
+    <!-- home -->
+
+    <div id="home" class="background_image">
+        <h1 id="content">the<br>cafe</h1>
+        <span></span>
+        <p id="para1">Open from 6am to 5pm</p>
+        <p id="para2">15 Adr street,5015</p>
+    </div>
+
+    <!-- content -->
+    <div class="allcontent">
+
+        <!-- about  -->
+        <div id="about" class="outer">
+            <div class="aboutcafe">
+                <h4>ABOUT THE CAFE</h4>
+                <p id="aboutcontent">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.
+                </p>
+                <p id="quote">
+                    "Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.<br><br> Chef, Coffeeist and Owner: Liam Brown
+                </p>
+            </div>
+
+            <div class="cafe_pic">
+                <img id="shop" class="images" src="images/shop.jpg" alt="image">
+                <img id="cup" class="images" src="images/cup.jpg" alt="image">
+            </div>
+
+        </div>
+
+        <!-- menu -->
+        <div id="menu" class="menu_outer">
+            <h4>MENU</h4>
+
+            <div class="titles">
+                <div id="eattit" onclick="eatdisplay()" class="title">Eat</div>
+                <div id="drinktit" onclick="drinkdisplay()" class="title">Drinks</div>
+            </div>
+            <div id="menulist" class="menulist">
+
+            </div>
+        </div>
+
+        <!-- find us -->
+        <div id="where" class="outercontainer">
+
+            <div class="find_us">
+                <h4>WHERE TO FIND US</h4>
+                <img style="max-width: 100%; margin-bottom: 30px;" src="images/map.jpg" alt="image">
+
+                <p> <span id="fyi"> FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+            </div>
+
+            <!-- form  -->
+            <div class="form">
+                <p><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+                <input type="text" placeholder="Name" name="name">
+                <input type="number" placeholder="How Many people" name="no_of_ppl">
+                <input type="datetime-local" name="date" value="2020-11-16T20:00">
+                <input id="last_input" type="text" placeholder="Message\Special Requiremnets" name="message">
+                <button>SEND MESSAGE</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        MADE BY NIPUN
+        <a id="up" href="#home"><span class="fa fa-arrow-circle-up"></span></a>
+
+    </footer>
+</body>
+<script src="cafe.js"></script>
+
+</html>
